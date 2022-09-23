@@ -12,6 +12,8 @@
     --shadow-comanda-color:rgba(0, 0, 0, 0.2);
     --button-activation-color:#188CE8;
     --hero-gradient-color:rgba(47, 48, 58, 0.4);
+    --color-icons:#AFB1B8;
+    --color-icons-futer:rgba(255, 255, 255, 0.1);
     
 }
 
@@ -24,6 +26,8 @@
 /* цвет окна #2F303A асфальт*/
 /* цвет имейла и телефона rgba(255, 255, 255, 0.6)*/
 /* цвет тени кнопки rgba(0, 0, 0, 0.15) */
+/*цвет иконок #AFB1B8*/
+/* цвет иконок в футере rgba(255, 255, 255, 0.1);*/
 
 
 
@@ -135,15 +139,46 @@ ul{
     margin-left: 30px;
     
 }
-.features-li:before{
+.features-li{
     content: '';
     height: 120px;
+    width: 270px;
     display: block;
     background-color: var(--secondary-background-color);
     border-radius: 4px;
     margin-bottom: 30px;
     background-repeat: no-repeat;
     background-position: center;
+    gap: 30px;
+
+}
+.features-text{
+    margin-top: 30px;
+
+}
+.antena{
+    margin: 25px 100px;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+.clock{
+    margin: 25px 100px;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+.diagram{
+    margin: 25px 100px;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+.astronavt{
+    margin: 25px 100px;
+    display: flex;
+    justify-content: center;
+    align-self: center;
 }
 .comanda-cocial:hover,
 .comanda-cocial:focus{
@@ -153,14 +188,34 @@ ul{
 }
 .comanda-cocial{
     display:block;
-    width: 20px;
-    height: 20px;
-    border: 2px solid purple;
-    
+    width: 44px;
+    height: 44px;
+    padding-bottom: 30px;
+    padding-top: 16px;
+    border-radius: 50%;
+
 
 }
+.icona-comanda{
+    fill: var(--color-icons);
+    width: 44px;
+    height: 44px;
+    gap: 10px;
+    justify-content: center;
+    align-self: center;
+
+}
+.icona-comanda:hover,
+.icona-comanda:focus{
+    fill: var(--main-background-color);
+}
 .comanda-title-cocial{
-display: flex;
+    display: flex;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    padding: 0 0;
 
 }
 .contacts{
@@ -207,24 +262,36 @@ display: flex;
 .button:focus{
     background-color: var(--button-activation-color);
 }
-.hero {
+.icona-contacts{
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+    fill: var(--color-icons);
+   
+}
+.icona-contacts:hover,
+.icona-contacts:focus{
+    fill: var(--accent-color);
+}
 
-    background-color: var(--window-color);
-    text-align: center;
+
+.hero{    
     padding-top: 200px;
     padding-bottom: 200px;
-}
-.hero{
-
-    height: 600px;
+    min-height: 600px;
     max-width: 1600px;
     margin-left: auto;
     margin-right: auto;
+    text-align: center;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    background-image: linear-gradient( ellipse rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4),), url(../imege/manypeople.jpg);
-    background-image:url(../imege/manypeople.jpg);
+    background-image: linear-gradient( to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../imege/manypeople.jpg);
+
+    background-color: var(--window-color);
+
+
+
 }
 .comanda-title-ul{
     display: flex;
@@ -301,9 +368,7 @@ display: flex;
     padding-bottom: 20px;
     padding-left: 24px;
     padding-right: 24px;
-    border-right: 1px solid var(--border-color) ;
-    border-bottom: 1px solid var(--border-color) ;
-    border-left: 1px solid var(--border-color) ;
+
 
 }
 .features-cont{
@@ -340,6 +405,7 @@ display: flex;
     margin-right: 8px;
 
 }
+
 .container-portfolio .portfolio-li:last-child{
     margin-right: 0px;
 }
@@ -353,6 +419,15 @@ margin-right: 0px;
 .iten{
      width: 370px;
 
+}
+.portfolio-a{
+    border: 1px solid var(--border-color);
+    background-color: var(--main-background-color);
+    
+}
+.portfolio-a:hover,
+.portfolio-a:focus{
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .title-project{
@@ -400,6 +475,7 @@ img{
 }
 .container-img{
     padding-bottom:94px;
+    padding-top: 181px;
 
 }
 .comanda-title-people{
@@ -434,20 +510,56 @@ img{
     font-size: 16px;
     line-height: 1.18;
     margin-top: 0px;
-    padding-bottom: 30px;
+    padding-bottom: 16px;
     text-align: center;
     margin-bottom: 0;
+
+}
+.client-centr{
+    color: var(--secondary-header-color);
+    text-align: center;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    margin-bottom: 50px;
+    margin-top: 94px;
+
+}
+.client-ul{
+    display: flex;
+    gap: 30px;
+    margin-bottom: 94px;
+}
+.client-li{
+    width: 170px;
+    height: 92px;
+    border: 1px solid var(--color-icons);
+    border-radius: 4px;
+}
+.client-svg{
+    fill: var(--color-icons);
+    width: 106px;
+    height: 60px;
+    justify-content: center;
+    display: flex;
+    align-self: center;
+    margin: 16px 32px;
+}
+.client-svg:hover,
+.client-svg:focus{
+    fill: var(--accent-color);
 
 }
 .footer{
     background-color:var(--window-color);
     padding-top: 60px;
     padding-bottom: 60px;
+    display: flex;
 }
 .web-footer{
     color: var(--main-background-color)
 }
-
 
 .futer-li:not(:last-child){
     margin-bottom: 9px;
@@ -466,8 +578,10 @@ img{
 .adress-footer{
     margin-top:20px;
     font-style: normal;
-
+    margin-right: 70px;
+    padding-right: 70px;
 }
+
 .mail{
     color:var(--email-color);
     font-size: 14px;
@@ -490,4 +604,44 @@ img{
 .mail:hover,
 .mail:focus{
     color: var(--main-background-color);
+}
+.futer-cocial-name{
+    color: var(--main-background-color);
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    line-height: 1.14;
+    display: block;
+}
+.footer-cocial{
+    display:block ;
+
+
+}
+.futer-cocial-svg{
+   display: block;
+   fill: var(--main-background-color);
+   justify-content: center;
+    display: flex;
+    align-self: center;
+    width: 20px;
+    height: 20px;
+    
+}
+.futer-cocial-ul{
+   display: flex;
+   gap: 10px;
+}
+.futer-cocial-li{
+    width: 44px;
+    height: 44px;
+    justify-content: center;
+    display: flex;
+    align-self: center;
+    border-radius: 50%;
+    background-color:var(--color-icons-futer);
+}
+.futer-cocial-li:hover,
+.futer-cocial-li:focus{
+    background-color:var(--accent-color)
 }
