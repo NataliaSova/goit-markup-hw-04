@@ -156,36 +156,8 @@ ul{
     margin-top: 30px;
 
 }
-.antena{
-    margin: 25px 100px;
-    display: flex;
-    justify-content: center;
-    align-self: center;
-}
-.clock{
-    margin: 25px 100px;
-    display: flex;
-    justify-content: center;
-    align-self: center;
-}
-.diagram{
-    margin: 25px 100px;
-    display: flex;
-    justify-content: center;
-    align-self: center;
-}
-.astronavt{
-    margin: 25px 100px;
-    display: flex;
-    justify-content: center;
-    align-self: center;
-}
-.comanda-cocial:hover,
-.comanda-cocial:focus{
-    background-color: var(--accent-color);
-    color: var(--border-color);
 
-}
+
 .comanda-cocial{
     display:flex; 
     justify-content: center;
@@ -193,31 +165,28 @@ ul{
     height: 44px;
     align-items: center;
     border-radius: 50%;
-
-
-}
-.icona-comanda{
     fill: var(--color-icons);
-    width: 44px;
-    height: 44px;
-    gap: 10px;
-    justify-content: center;
-    align-items: center;
-
+}
+.comanda-cocial:hover,
+.comanda-cocial:focus{
+    background-color: var(--accent-color);
+    fill: var(--border-color);
 
 }
+
+
 .icona-comanda:hover,
 .icona-comanda:focus{
     fill: var(--main-background-color);
 }
 .comanda-title-cocial{
-    height: 44px;
     display: flex;
     justify-content: center;
-    padding: 0 0;
     margin-top: 16px;
-
+    padding-bottom: 30px;
+    gap: 10px;
 }
+
 .contacts{
     color:var(--primary-text-color);
     font-weight: 500;
@@ -225,7 +194,7 @@ ul{
     line-height: 1.2;
     text-decoration: none;
     display: flex;
-    align-self: center;
+    align-items: center;
 }
 .contacts:hover,
 .contacts:focus{
@@ -268,11 +237,11 @@ ul{
     width: 16px;
     height: 12px;
     margin-right: 10px;
-    fill: var(--color-icons);
+    fill: var(--primary-text-color);
 }
 .smartfon{
     width: 10px;
-    height: 12px;
+    height: 16px;
 }
 .icona-contacts:hover,
 .icona-contacts:focus{
@@ -533,30 +502,32 @@ img{
     line-height: 1.16;
     letter-spacing: 0.03em;
     margin-bottom: 50px;
+    margin-top: 0px;
 
 }
 .client-ul{
     display: flex;
-    gap: 30px;
-
+ 
+     width: 106px;
+    height: 60px;
+     gap: 30px; 
+ 
 }
-.client-li{
-    width: 170px;
-    height: 92px;
+.client-li{   
+   
     border: 1px solid var(--color-icons);
     border-radius: 4px;
-}
-.client-svg{
-    fill: var(--color-icons);
-    width: 106px;
-    height: 60px;
     justify-content: center;
-    display: flex;
-    align-self: center;
-    margin: 16px 32px;
+     display: flex;
+    align-items: center;   
+    fill: var(--color-icons);
+       width: 170px;
+    height: 92px; 
+ 
 }
-.client-svg:hover,
-.client-svg:focus{
+
+.client-li:hover,
+.client-li:focus{
     fill: var(--accent-color);
 
 }
@@ -587,7 +558,6 @@ img{
 .adress-footer{
     margin-top:20px;
     font-style: normal;
-    margin-right: 70px;
 
 }
 .adress-div{
@@ -628,6 +598,8 @@ img{
     line-height: 1.14;
     display: block;
     text-transform: uppercase;
+    margin-top: 0px;
+    margin-bottom: 20px;
 
 }
 .footer-cocial{
@@ -635,16 +607,7 @@ img{
 
 
 }
-.futer-cocial-svg{
-   display: block;
-   fill: var(--main-background-color);
-   justify-content: center;
-    display: flex;
-    align-self: center;
-    width: 20px;
-    height: 20px;
-    
-}
+
 .futer-cocial-ul{
    display: flex;
    gap: 10px;
@@ -654,9 +617,10 @@ img{
     height: 44px;
     justify-content: center;
     display: flex;
-    align-self: center;
+    align-items: center;
     border-radius: 50%;
     background-color:var(--color-icons-futer);
+    fill: var(--main-background-color);
 }
 .futer-cocial-li:hover,
 .futer-cocial-li:focus{
