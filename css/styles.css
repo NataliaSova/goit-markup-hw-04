@@ -148,7 +148,6 @@ ul{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 30px;
     gap: 30px;
 
 }
@@ -188,6 +187,7 @@ ul{
 }
 
 .contacts{
+    fill: currentColor;
     color:var(--primary-text-color);
     font-weight: 500;
     font-size: 14px;
@@ -237,7 +237,6 @@ ul{
     width: 16px;
     height: 12px;
     margin-right: 10px;
-    fill: var(--primary-text-color);
 }
 .smartfon{
     width: 10px;
@@ -397,7 +396,8 @@ margin-right: 0px;
 
 }
 .portfolio-a{
-   
+    display: block;
+   text-decoration: none;
     background-color: var(--main-background-color);
     
 }
@@ -507,9 +507,6 @@ img{
 }
 .client-ul{
     display: flex;
- 
-     width: 106px;
-    height: 60px;
      gap: 30px; 
  
 }
@@ -529,6 +526,7 @@ img{
 .client-li:hover,
 .client-li:focus{
     fill: var(--accent-color);
+    border-color: var(--accent-color);
 
 }
 .footer{
